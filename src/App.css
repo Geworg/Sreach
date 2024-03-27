@@ -1,0 +1,67 @@
+:root {
+    --yellow: rgb(84, 18, 176);
+    --grey: #333;
+    --whiteYellow: rgb(222, 205, 173);
+    --lightGreen: rgb(246, 246, 246);
+    --green:rgb(176, 150, 189);
+}
+
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    margin-top: 25%;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    width: 400px;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 20px;
+    background: var(--lightGreen);
+    border: none;
+    padding: 0 5px;
+    color: var(--whiteYellow);
+    margin: 10px;
+}
+
+input::placeholder {
+    color: var(--whiteYellow);
+}
+
+.container {
+    background-color: var(--green);
+    width: 410px;
+    max-height: 410px;
+    border-radius: 10px;
+    overflow-y: auto;
+    font-size: 20px;
+}
+
+.item {
+    padding: 10px;
+}
+
+.container::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+.container::-webkit-scrollbar {
+    background: var(--grey);
+    border-radius: .5rem;
+}
+
+
+.container::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+    border-radius: .5rem;
+}
